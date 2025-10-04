@@ -1,0 +1,15 @@
+<!-- 🔹 Banner superior con promociones -->
+<div class="banner-top">
+  <img src="/assets/portada1.jpg" alt="Promoción principal">
+</div>
+
+<!-- 🔹 Sección destacada -->
+<section class="section-highlight">
+  <h2>WEEKLY DISCOVERY</h2>
+  <div class="grid-products">
+    <div class="product" *ngFor="let item of weekly">
+      <img [src]="item.img" [alt]="item.title">
+      <h3>{{ item.title }}</h3>
+    </div>
+  </div>
+</section>

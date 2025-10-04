@@ -1,0 +1,25 @@
+mat-toolbar {
+  background: #111827; // gris oscuro elegante
+  color: white;
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-right: 2rem;
+  }
+
+  a {
+    color: white;
+    margin: 0 0.75rem;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: #14b8a6; // verde-acento
+    }
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}

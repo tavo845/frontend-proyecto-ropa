@@ -1,0 +1,16 @@
+<section class="container">
+  <h2 class="section-title">{{ title }}</h2>
+  <div class="grid">
+    <mat-card class="card" *ngFor="let p of products">
+      <img mat-card-image [src]="p.image" [alt]="p.name">
+      <mat-card-content>
+        <div class="name">{{ p.name }}</div>
+        <div class="price">{{ p.price | currency:'Q' }}</div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-stroked-button color="primary">Ver más</button>
+        <button mat-raised-button color="primary">Agregar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</section>

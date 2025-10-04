@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="navbar">
+  <div class="container nav-inner">
+    <a class="logo" routerLink="/">MiTienda</a>
+
+    <nav class="nav-links">
+      <button mat-button [matMenuTriggerFor]="hombres">Hombres</button>
+      <mat-menu #hombres="matMenu">
+        <button mat-menu-item>Camisas</button>
+        <button mat-menu-item>Pantalones</button>
+        <button mat-menu-item>Zapatos</button>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="mujeres">Mujeres</button>
+      <mat-menu #mujeres="matMenu">
+        <button mat-menu-item>Vestidos</button>
+        <button mat-menu-item>Blusas</button>
+        <button mat-menu-item>Zapatos</button>
+      </mat-menu>
+
+      <button mat-button>Accesorios</button>
+      <button mat-button>Ofertas</button>
+      <button mat-button>Marcas</button>
+    </nav>
+
+    <div class="icons">
+      <button mat-icon-button><mat-icon>search</mat-icon></button>
+      <button mat-icon-button><mat-icon>account_circle</mat-icon></button>
+      <button mat-icon-button><mat-icon>shopping_cart</mat-icon></button>
+    </div>
+  </div>
+</mat-toolbar>
